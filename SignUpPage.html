@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./SignUpPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Đăng Kí - Booksư Recommendation</title>
+</head>
+
+<body>
+    <header class="header" style="background-color: white;">
+        <h1 class="title"><a href="#">Book Recommendation</a></h1>
+        <nav class="nav-bar">
+            <a href="#">Bài Đánh giá</a>
+            <a href="#">Sách</a>
+            <a href="./SignInPage.html">Tài Khoản/ Đăng nhập</a>
+            <a href="#">Trang chủ</a>
+            <a href="./SignUpPage.html">Đăng kí</a>
+        </nav>
+    </header>
+    <section class="SignInForm container">
+        <h2>Đăng kí tài khoản</h2>
+        <form id="form">
+            <div class="name">
+                <div class="text">Họ tên</div>
+                <input type="text" id="name">
+            </div>
+            <div class="pass">
+                <div class="user-name text">Tên đăng nhập</div>
+                <input type="text" id="username" required>
+            </div>
+                <div class="name">
+                    <div class="email text ">Email</div>
+                    <input type="email" id="email">
+                </div>
+                <div class="pass">
+                    <div class="text">Mật khẩu</div>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit">Đăng Kí</button>
+        </form>
+    </section>
+
+    <section class="sharing container">
+        <div class="text">Sharing is caring:</div>
+        <div class="btn">
+            <button class="facebook-btn" onclick="shareOnFacebook()">
+                <i class="fab fa-facebook-f"></i>
+                Share on Facebook
+            </button>
+            <button class="twitter-btn" onclick="shareOnTwitter()">
+                <i class="fab fa-twitter"></i>
+                Share on Twitter
+            </button>
+        </div>
+    </section>
+    <script src="./SignUpPage.js"></script>
+</body>
+
+</html>
