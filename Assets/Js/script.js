@@ -5,7 +5,8 @@ function initBook(id) {
       const bookElements = document.getElementById("book-information");
       const bookImage = text;
       const newEle = document.createElement("a");
-      newEle.href = "#";
+      // newEle.href = "#";
+      newEle.href = `detail.html?ID=${id}`
       newEle.classList.add("col-xxl-4");
       newEle.classList.add("col-md-6");
       newEle.classList.add("col-sm-12");
