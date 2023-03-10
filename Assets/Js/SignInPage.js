@@ -15,10 +15,11 @@ if (check) {
 
     const username = event.target.username.value;
     let checkExist = false;
-    let i = 0; 
-    for (i = 0; i < userArray.length; i++) {
+    let index = 0; 
+    for (let i = 0; i < userArray.length; i++) {
       if (userArray[i].username === username && userArray[i].password === event.target.password.value) {
         checkExist = true;
+        index = i;
         break;
       }
     }
@@ -29,12 +30,14 @@ if (check) {
       form.style.display = 'none';
       const info = document.getElementById("info");
       alert('Đăng nhập thành công.');
-      const tmpName = userArray[i].username.value; 
-      const tmpEmail = userArray[i].email.value;
-      const tmpPassword = userArray[i].password.value;
+      const tmpName = userArray[index].username; 
+      const tmpEmail = userArray[index].email;
+      const tmpPassword = userArray[index].password;
+
+      info.style.display = 'block';
 
 
-      document.getElementById('name1').placeholder = tmpName;
+      document.getElementById('username1').placeholder = tmpName;
       document.getElementById('email1').placeholder = tmpEmail;
       document.getElementById('password1').placeholder = tmpPassword;
 
@@ -45,3 +48,4 @@ if (check) {
     }
   });
 }
+

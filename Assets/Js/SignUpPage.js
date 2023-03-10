@@ -25,8 +25,8 @@ form.addEventListener("submit", (event) => {
 
         for (let i = 0; i < localUSers.length; i++) {
             if (localUSers[i].email == user.email) {
-                checkExist = true
-                break
+                checkExist = true;
+                break;
             }
         }
 
@@ -36,7 +36,8 @@ form.addEventListener("submit", (event) => {
         else {
             localUSers.push(user);
             localStorage.setItem('userArray', JSON.stringify(localUSers));
-            alert("Đăng kí thành công")
+            alert("Đăng kí thành công");
+            window.location.href = "SignInPage.html";
 
             
         }
