@@ -20,7 +20,7 @@
     
 }
 
-.nav-bar {
+/* .nav-bar {
     display: flex;
     gap: 30px;
     text-align: center;
@@ -38,9 +38,9 @@
     color: rgb(29, 60, 182);
     transform: scale(1.1);
 
-}
+} */
 
-.SignInForm {
+.SignUpForm {
     margin-top: 70px; 
     display: flex;
     flex-direction: column;

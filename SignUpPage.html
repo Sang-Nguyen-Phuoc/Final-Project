@@ -2,62 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./SignUpPage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Đăng Kí - Booksư Recommendation</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/SignUpPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c721466f77.js" crossorigin="anonymous"></script>
+  <title>Đăng Kí - Booksư Recommendation</title>
 </head>
 
-<body>
-    <header class="header" style="background-color: white;">
-        <h1 class="title"><a href="#">Book Recommendation</a></h1>
-        <nav class="nav-bar">
-            <a href="#">Bài Đánh giá</a>
-            <a href="#">Sách</a>
-            <a href="./SignInPage.html">Tài Khoản/ Đăng nhập</a>
-            <a href="#">Trang chủ</a>
-            <a href="./SignUpPage.html">Đăng kí</a>
-        </nav>
-    </header>
-    <section class="SignInForm container">
-        <h2>Đăng kí tài khoản</h2>
-        <form id="form">
-            <div class="name">
-                <div class="text">Họ tên</div>
-                <input type="text" id="name">
+<body id="bootstrap-overrides">
+  <div class="contain">
+    <div class="container mt-4">
+      <header class="ct-header">
+        <div class="navbar navbar-expand-lg p-md-3">
+          <a href="./index.html" class="navbar-brand nav-start">Books Recommendation</a>
+          <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="./review.html" class="nav-link">BÀI ĐÁNH GIÁ</a>
+              </li>
+              <li class="nav-item">
+                <a href="./" class="nav-link">SÁCH</a>
+              </li>
+              <li class="nav-item">
+                <a href="./SignInPage.html" class="nav-link">ĐĂNG NHẬP</a>
+              </li>
+              <li class="nav-item">
+                <a href="./Index.html" class="nav-link active text-primary">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item">
+                <a href="./SignUpPage.html" class="nav-link">ĐĂNG KÝ</a>
+              </li>
+            </ul>
+            <div id="search-bar">
+              <button input="button" class="btn btn-outline-light text-dark" onclick="searchEngine()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
-            <div class="pass">
-                <div class="user-name text">Tên đăng nhập</div>
-                <input type="text" id="username" required>
-            </div>
-                <div class="name">
-                    <div class="email text ">Email</div>
-                    <input type="email" id="email">
-                </div>
-                <div class="pass">
-                    <div class="text">Mật khẩu</div>
-                    <input type="password" id="password" required>
-                </div>
-                <button type="submit" class="submit">Đăng Kí</button>
-        </form>
-    </section>
-
-    <section class="sharing container">
-        <div class="text">Sharing is caring:</div>
-        <div class="btn">
-            <button class="facebook-btn" onclick="shareOnFacebook()">
-                <i class="fab fa-facebook-f"></i>
-                Share on Facebook
-            </button>
-            <button class="twitter-btn" onclick="shareOnTwitter()">
-                <i class="fab fa-twitter"></i>
-                Share on Twitter
-            </button>
+          </div>
         </div>
-    </section>
-    <script src="./SignUpPage.js"></script>
+      </header>
+    </div>
+  </div>
+  <section class="SignUpForm container">
+    <h2>Đăng kí tài khoản</h2>
+    <form id="form">
+      <div class="name">
+        <div class="text">Họ tên</div>
+        <input type="text" id="name">
+      </div>
+      <div class="pass">
+        <div class="user-name text">Tên đăng nhập</div>
+        <input type="text" id="username" required>
+      </div>
+      <div class="name">
+        <div class="email text ">Email</div>
+        <input type="email" id="email">
+      </div>
+      <div class="pass">
+        <div class="text">Mật khẩu</div>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit" class="submit">Đăng Kí</button>
+    </form>
+  </section>
+
+  <section class="sharing container">
+    <div class="text">Sharing is caring:</div>
+    <div class="btn">
+      <button class="facebook-btn" onclick="shareOnFacebook()">
+        <i class="fab fa-facebook-f"></i>
+        Share on Facebook
+      </button>
+      <button class="twitter-btn" onclick="shareOnTwitter()">
+        <i class="fab fa-twitter"></i>
+        Share on Twitter
+      </button>
+    </div>
+  </section>
+  <script src="./Assets/Js/SignUpPage.js"></script>
 </body>
 
 </html>
