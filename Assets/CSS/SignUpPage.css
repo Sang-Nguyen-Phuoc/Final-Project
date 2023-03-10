@@ -1,15 +1,15 @@
-* {
+ /* * {
     padding: 0;
     margin: 0; 
     box-sizing: border-box;
-}
-.body {
+} */
+/* .body {
   background-color: rgba(215, 210, 210, 0.942);
-}
-.container {
+} */
+ /* .container {
     max-width: 80%; 
     margin: 0 auto;    
-}
+}  */
 
 .header {
     display: flex;
