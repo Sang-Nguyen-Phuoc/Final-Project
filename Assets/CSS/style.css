@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--white-color-1--);
+    background-color: var(--white-color-1--); 
     max-width: 1920 1080;
     color: var(--black-color-1--)
 }
@@ -27,11 +27,13 @@ h3 {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
+
 }
 
 :root {
     --white-color-1--: #fafbfc;
     --white-color-2--: #ffffff;
+    --grey-color-1--: #f4f4f5;
     --black-color-1--: #192a3d;
     --blue-color-1--: #2872fa;
     --blue-color-2--: #1e90ff;
@@ -76,7 +78,7 @@ h3 {
 }
 
 .container .background {
-    background-image: url(/Final-Project/Assets/Images/Tren-duong-bang.jpg);
+    background-image: url(/Assets/Images/Tren-duong-bang.jpg);
     height: 450px;
     background-size: cover;
     background-position: 0;
@@ -98,8 +100,8 @@ h3 {
 }
 
 .row.book-info .img-book-cover {
-    width: 375px;
-    height: 400px;
+    width: 360px;
+    height: 390px;
     text-decoration: none;
 }
 
@@ -143,3 +145,67 @@ h3 {
     margin-right: 5px;
     padding-left: 10px;
 }
+
+.copy-right {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--grey-color-1--);
+    color: var(--black-color-1--);
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.book-review-item .review-item p{
+    font-size: 12px;
+    color: var(--black-color-1--);
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.book-review-item .review-item p:hover {
+    color: var(--blue-color-1--);
+}
+
+.review-title p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.review-title p:hover {
+    color: var(--blue-color-1--);
+}
+
+.review-img img {
+    width: 350px; 
+    height: 350px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.review-content {
+    padding-left: 20px;
+}
+
+.author-time {
+    display: flex;
+}
+
+.author-time .author {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#bootstrap-overrides .author-time .author {
+    font-size: 12px;
+}
+
+#bootstrap-overrides .author-time .author:hover {
+    color: var(--blue-color-1--);
+}
+
+.author-time .time {
+    font-size: 12px;
+}
+
