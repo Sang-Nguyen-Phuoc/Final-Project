@@ -60,3 +60,12 @@ if (check) {
     }
   })
 }
+
+const logOut = document.getElementById("logout"); 
+logOut.addEventListener("click", (event) => {
+  event.preventDefault();
+  localStorage.removeItem("user"); 
+  localStorage.removeItem("isSignin");
+  window.location.href = "SignInPage.html"; // redirect to sign in page after logging out
+})
+
