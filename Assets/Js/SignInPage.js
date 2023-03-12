@@ -42,7 +42,7 @@ if (check) {
       }
 
       localStorage.setItem("user", JSON.stringify(user));
-      
+
       const form = document.getElementById("form");
       form.style.display = 'none';
 
@@ -61,10 +61,10 @@ if (check) {
   })
 }
 
-const logOut = document.getElementById("logout"); 
+const logOut = document.getElementById("logout");
 logOut.addEventListener("click", (event) => {
   event.preventDefault();
-  localStorage.removeItem("user"); 
+  localStorage.removeItem("user");
   localStorage.removeItem("isSignin");
   window.location.href = "SignInPage.html"; // redirect to sign in page after logging out
 })

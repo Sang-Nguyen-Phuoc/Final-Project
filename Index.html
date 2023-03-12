@@ -38,11 +38,6 @@
                 <a href="./SignUpPage.html" class="nav-link">ĐĂNG KÝ</a>
               </li>
             </ul>
-            <div id="search-bar">
-              <button input="button" class="btn btn-outline-light text-dark" onclick="searchEngine()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
           </div>
         </div>
       </header>
@@ -53,7 +48,9 @@
     <div class="background col-12">
       <h3 class="text-white">Welcome</h3>
       <p class="text-white">Hy vọng bạn sẽ tìm được cho mình một cuốn sách hay</p>
-      <button class="btn btn-primary">Đi xem thử</button>
+      <button class="btn btn-primary">
+        <a href="./review.html" class="text-white">Đi xem thử</a>
+      </button>
     </div>
     <div class="heading">
       <h3 class="heading-3">Sách mới cập nhật</h3>
@@ -62,13 +59,42 @@
   </div>
   <div class="container mt-5">
     <h3 class="heading-3">Bài đánh giá mới</h3>
-  </div>
-  <div class="container mt-5">
-    <h3 class="heading-3">Bình luận mới</h3>
+    <div class="row">
+      <div class="col-xxl-4 col-md-6 col-sm-12">
+        <a href="./reviewDetail.html" onclick="getId(1)">
+          <img src="./Assets/Data/detailReview/1/img.jpg" alt="" class="img-link">
+          <p>Bakemonogatari - Thanh xuân “thú vị” bên muôn vàn điều “Quái gỡ”</p>
+        </a>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-sm-12">
+        <a href="./reviewDetail.html" onclick="getId(3)">
+          <img src="./Assets/Data/detailReview/3/img.jpg" alt="" class="img-link">
+          <p>Cô Gái Đến Từ Hôm Qua</p>
+        </a>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-sm-12">
+        <a href="./reviewDetail.html" onclick="getId(4)">
+          <img src="./Assets/Data/detailReview/4/img.jpg" alt="" class="img-link">
+          <p>Cây Cam Ngọt Của Tôi</p>
+        </a>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-sm-12">
+        <a href="./reviewDetail.html" onclick="getId(6)">
+          <img src="./Assets/Data/detailReview/6/img.jpg" alt="" class="img-link">
+          <p>Sự Im Lặng Của Bầy Cừu</p>
+        </a>
+      </div>
+      <div class="col-xxl-4 col-md-6 col-sm-12">
+        <a href="./reviewDetail.html" onclick="getId(2)">
+          <img src="./Assets/Data/detailReview/2/img.jpg" alt="" class="img-link">
+          <p> Tuổi Thơ Dữ Dội</p>
+        </a>
+      </div>
+    </div>
   </div>
   <div class="copy-right">
     <footer class="container">
-      <p class="col-6">Bản quyền 2023</p>
+      <p class="col-6">Bản quyền 2022</p>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -81,6 +107,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
   <script src="./Assets/Js/script.js"></script>
+  <script src="./Assets/Js/reviewDetail.js"></script>
 </body>
 
 </html>

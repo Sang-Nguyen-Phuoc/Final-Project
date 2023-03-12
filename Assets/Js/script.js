@@ -11,13 +11,13 @@ function initBook(id) {
       newEle.classList.add("col-md-6");
       newEle.classList.add("col-sm-12");
       newEle.classList.add("book-item");
-      newEle.innerHTML = 
+      newEle.innerHTML =
         `
           <img src="${bookImage}" class="img-book-cover">
           <p id="${id}"></p>
           <button class="btn btn-primary">Đọc tiếp</button>
         `
-      bookElements.append(newEle);
+      bookElements.appendChild(newEle);
     }
     )
 }
@@ -37,36 +37,5 @@ function loadBookOnPage(numberOfBook) {
       )
   }
 }
-
-function searchEngine() {
-  const searchBar = document.getElementById("search-bar");
-  searchBar.innerHTML =
-    `
-      <form class="d-flex" role="search">
-        <input type="text" placeholder="Tìm kiếm" class="search-engine">
-        <button type="submit" class="search-btn btn btn-primary" onclick="directPage()">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <button input="submit" class="btn text-dark" onclick="closeSearchEngine()">
-          <i class="fa-solid fa-x"></i>
-        </button>
-      </form>
-    `
-}
-
-function closeSearchEngine() {
-  const searchButton = document.getElementById("search-bar");
-  searchButton.innerHTML = 
-    `
-      <button input="button" class="btn btn-outline-light text-dark" onclick="searchEngine()">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-    `
-}
-
-function directPage() {
-
-}
-
 
 loadBookOnPage(9);

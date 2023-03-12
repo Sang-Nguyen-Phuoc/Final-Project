@@ -1,7 +1,7 @@
-const form = document.getElementById("form"); 
+const form = document.getElementById("form");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     const user = {
         email: event.target.email.value,
         password: event.target.password.value,
@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
     const localUSers = JSON.parse(localStorage.getItem('userArray'))
 
     if (!localUSers) {
-        const userArray = [ user ]
+        const userArray = [user]
         localStorage.setItem('userArray', JSON.stringify(userArray))
     }
     else {
@@ -39,7 +39,7 @@ form.addEventListener("submit", (event) => {
             alert("Đăng kí thành công");
             window.location.href = "SignInPage.html";
 
-            
+
         }
     }
 

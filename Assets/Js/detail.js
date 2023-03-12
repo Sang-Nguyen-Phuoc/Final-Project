@@ -4,6 +4,7 @@ const bookId = urlParams.get('ID')
 
 getImg();
 getName();
+loadContent();
 
 //get img by ID
 function getImg() {
@@ -20,5 +21,14 @@ function getName() {
         const name = document.getElementById("bookName");
         name.innerText = bookName;
         console.log(bookName);
+    })
+}
+
+function loadContent() {
+    const fileName = `./Assets/Data/detail/${bookId}.txt`;
+    fetch(fileName).then(response => response.text()).then(text => {
+        const content = document.getElementById("content");
+        content.innerHTML = text;
+        console.log(text);
     })
 }
