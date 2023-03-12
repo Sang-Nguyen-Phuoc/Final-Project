@@ -24,14 +24,14 @@ form.addEventListener("submit", (event) => {
         let checkExist = false
 
         for (let i = 0; i < localUSers.length; i++) {
-            if (localUSers[i].email == user.email) {
+            if (localUSers[i].username == user.username) {
                 checkExist = true;
                 break;
             }
         }
 
         if (checkExist) {
-            alert('Email đã tồn tại')
+            alert('Tên đăng nhập đã tồn tại');
         }
         else {
             localUSers.push(user);
